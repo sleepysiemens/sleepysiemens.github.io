@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/evolventa');
+
+body
+{
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+button
+{
+    border: none;
+    width: 50vw;
+    height: 5vh;
+    font-size: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px gray;
+    transition: .3s;
+}
+
+button:hover
+{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+table
+{
+    border-spacing: 0;
+}
+
+td, th
+{
+    border: 1px solid black;
+}
+
+a
+{
+    color: #06a16a;
+    text-decoration: none;
+}
+
+
+.title
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-title
+{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+.logo-subtitle
+{
+    font-weight: 400;
+    font-size: .8rem;
+    color: #06a16a;
+    margin: 0;
+}
+
+.container
+{
+    background-color: #404040;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 20px;
+}
+
+/*login and registration*/
+
+.inp
+{
+    width: 60%;
+    height: 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    background-color: #333333;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.inp::placeholder
+{
+    color: #737373;
+}
+
+.inp:active
+{
+    background-color: #1a1a1a;
+}
+
+.inp-btn
+{
+    width: 60%;
+    height: 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    background-color: #06a16a;
+    border: none;
+    border-radius: 1rem;
+}
+
+.inp-btn:hover
+{
+    background-color: #059462;
+}
+
+.error-msg
+{
+    color: red;
+    background-color: #ff6666;
+    width: 20%;
+    opacity: .5;
+    border-radius: 1rem;
+}
+
+/*user*/
+
+.code
+{
+    color: #737373;
+    font-family: 'Evolventa', sans-serif;
+}
+
+.search-div
+{
+    width: 80%;
+    background-color: #333333;
+    border-radius: 1rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: start;
+}
+
+.search-inp
+{
+    background-color: transparent;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+
+}
+
+.fa-search
+{
+    padding: 0;
+    color: #00492b;
+    font-weight: 400;
+    margin: auto 1rem auto 10px;
+}
+
+.profile-div
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-div2
+{
+    display: flex;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.profile-div2:hover
+{
+    color: #059462;
+}
+
+.fa-user
+{
+    padding: 0;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0px 2px;
+}
+
+.profile_pic
+{
+    background-color: #333333;
+    padding: .7rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.INN-div
+{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+}
+
+.INN
+{
+    margin: 0;
+    color: #06a16a;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.INN2
+{
+    font-family: 'Evolventa', sans-serif;
+    margin: 0;
+    font-size: .7rem;
+}
+
+.profile-sub-div
+{
+    width: 30%;/*30%*/
+    background: rgb(6,161,106);
+    background: linear-gradient(90deg, rgba(6,161,106,1) 0%, rgba(6,161,106,1) 35%, rgba(26,26,26,1) 100%);
+    border-radius: .7rem;
+    height: 5.5rem;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.profile-sub-div2
+{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    z-index: 3;
+    text-align: start;
+}
+
+.profile-sub-div3
+{
+    z-index: 0;
+    padding-top: 5px;
+}
+
+.profile-i
+{
+    color: white;
+    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: .7;
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(26,26,26,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-bold
+{
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.8rem;
+}
+
+.banner-txt, .banner-txt1
+{
+    font-family: 'Evolventa', sans-serif;
+    font-size: .7rem;
+    margin: 0;
+}
+
+.profile-container
+{
+    width: 43%;
+    background-color: #404040;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.cont-header
+{
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.banner-txt1
+{
+    color: #737373;
+    text-align: start;
+}
+
+.scale
+{
+    width: 95%;
+    height: 1.5rem;
+    background-color: #00492b;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+}
+
+.scale1
+{
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #06a16a;
+}
+
+.order-count
+{
+    background-color: #06a16a;
+    margin-top: 0;
+    height: 1.25rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+/* profile */
+
+.profile-header
+{
+    position: fixed;
+    width: 100%;
+    max-width: 414px;
+    padding: 10px 0;
+    background-color: #1a1a1a;
+}
+
+.profile-header-div
+{
+    width: 100%;
+
+    display: flex;
+}
+
+.fa-arrow-left
+{
+    color: white;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-left: 1rem;
+    transition: .3s;
+}
+
+.fa-arrow-left:hover
+{
+    color: #06a16a;
+}
+
+.prof-pic
+{
+    font-size: 3rem;
+    background-color: #333333;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.profile-categoty
+{
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+    background-color: #404040;
+    border-radius: 2rem;
+    padding: .2rem;
+    color: white;
+    transition: .3s;
+}
+
+.profile-categoty:hover
+{
+    color: #06a16a;
+}

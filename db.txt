@@ -1,0 +1,45 @@
+--таблица пользователей
+
+CREATE TABLE users(
+id SERIAL NOT NULL PRIMARY KEY,
+email varchar(50) NOT NULL,
+password varchar(50) NOT NULL,
+role int NOT NULL);
+
+--INSERT INTO users(username, password, role) VALUES ('user', 'password', 2);
+
+--информация о клиенте
+
+CREATE TABLE details_client(
+id SERIAL NOT NULL PRIMARY KEY,
+user_id int NOT NULL,
+FOREIGN KEY (user_id) REFERENCES users(id),
+name varchar(50) NOT NULL,
+second_name varchar(50) NOT NULL,
+client_code varchar(50) NOT NULL);
+
+--INSERT INTO details_client(user_id, name, second_name, client_code)
+--VALUES (2, 'Иван','Иванов','GL-2011');
+
+CREATE TABLE orders(
+id SERIAL NOT NULL PRIMARY KEY,
+number varchar(50) NOT NULL,
+client_id int NOT NULL,
+FOREIGN KEY (client_id) REFERENCES details_client(id));
+
+INSERT INTO orders(number, client_id) VALUES
+('2023-02-19-022', 3);
+
+CREATE OR REPLACE FUNCTION user_insert(varchar, varchar)
+RETURNS boolean
+AS $$
+BEGIN
+
+INSERT INTO users
+(email, password, role)
+VALUES
+($1, $2, 2);
+
+RETURN true;
+END;
+$$ LANGUAGE 'plpgsql';
