@@ -1,1 +1,2 @@
-# sleepysiemens.github.io sss
+<?php
+header('Location: \login\logout.php');
